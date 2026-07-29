@@ -7,6 +7,9 @@ body{
 .head{
     color: darkblue;
 }
+header h2 span {
+    color: red;
+}
 p{
     color: white;
 }
