@@ -1,2 +1,0 @@
-# ResumeDemo
-My Resume Demo
