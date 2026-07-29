@@ -1,0 +1,42 @@
+body{
+    background-color: #f9844a;
+}
+#bglime{
+    background-color: lightgreen ;
+}
+.head{
+    color: darkblue;
+}
+p{
+    color: white;
+}
+#para{
+    color: green;
+    font-size: 20px;
+}
+#para  span{
+    color: black;
+    font-size: 30px;
+}
+section  p {
+    color: black;
+}
+section > ul > li {
+    color: white;
+}
+section > ol > li {
+    color: black;
+}
+section ul li:first-child a {
+  background-color: yellow;
+}
+section li:nth-child(2) a{
+    background-color: rgba(0, 0, 255, 0.564);
+}
+
+section ol li:nth-child(2){
+    color: blue;
+}
+section ol li:nth-child(3) {
+    color: red;
+}
