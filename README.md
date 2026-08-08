@@ -1,62 +1,39 @@
-# CSS Selectors & Specificity Demonstration
+# Responsive Split-Screen Login Page
 
-This project demonstrates various CSS selector techniques, including element selectors, class selectors, ID selectors, pseudo-classes (`:first-child`, `:nth-child`), combinators (child selectors `>`), and inline styling.
+A clean, modern, split-screen login page interface built using plain HTML5 and standard CSS3.
 
----
+## Features
 
-## 📁 Project Structure
+- Split-screen visual layout using CSS Flexbox.
+- Full viewport height cover image using dynamic viewport units (`100dvh`).
+- Native HTML5 form validation for email and password input fields.
+- Interactive styling for state changes (hover states on buttons and links).
+- Custom input styling with subtle shadow effects and clean typography.
 
-```
+## File Structure
+
+```text
 .
-├── index.html   # Main HTML document containing structured semantic markup
-└── style.css    # External stylesheet containing custom CSS rules
+├── index.html   # Main markup containing the form and image structure
+└── style.css    # Layout rules, typography, and visual styling
 ```
 
----
+## Setup and Usage
 
-## 📄 Overview of Files
+1. Clone or download the repository files to your local system.
+2. Open `index.html` directly in any web browser.
 
-### 1. `index.html`
-- **Header Section (`<header id="headings">`)**:
-  - Contains `<h1>`, `<h2>`, and `<h4>` headings.
-  - Demonstrates usage of classes (`class="head"`), IDs (`id="bglime"`), and inline styling (`<span style="color: red">`).
-- **Main Content (`<main>`)**:
-  - Uses `<article>` tags containing `<p>` elements to illustrate paragraph styling.
-  - Contains a `<section>` with an unordered list (`<ul>`) and ordered list (`<ol>`) to showcase link and list-item targeting using CSS pseudo-classes.
+No build tools, preprocessors, or external dependencies are required to run this project.
 
-### 2. `style.css`
-- **Global / Body**:
-  - `body`: Sets background color to orange/coral (`#f9844a`).
-- **Class & ID Selectors**:
-  - `.head`: Targets headings with dark blue text (`color: darkblue`).
-  - `#bglime`: Sets background color to light green (`background-color: lightgreen`).
-  - `#para`: Styles targeted paragraph with green text and `20px` font size.
-  - `#para span`: Targets nested `<span>` with black text and enlarged `30px` font size.
-- **Structural Combinators & Pseudo-Classes**:
-  - `section > ul > li`: Sets unordered list text color to white.
-  - `section > ol > li`: Sets ordered list text color to black.
-  - `section ul li:first-child a`: Applies yellow background to the first hyperlink.
-  - `section li:nth-child(2) a`: Applies semi-transparent blue background to the second hyperlink.
-  - `section ol li:nth-child(2)`: Colors the 2nd ordered list item blue.
-  - `section ol li:nth-child(3)`: Colors the 3rd ordered list item red.
+## Code Overview
 
----
+### Layout Design
+The layout relies on a parent flex container (`.container`) split equally between two columns (`.left` and `.right`) using `flex-basis: 50%`:
 
-## 🎯 Key Concepts Covered
+- **Left Section (`.left`)**: Houses a side banner image set to `height: 100dvh` and `object-fit: cover` to ensure it fills the entire left column seamlessly without distorting the aspect ratio.
+- **Right Section (`.right`)**: Contains the form container with centered typography and clean spacing.
 
-| Concept | Description | Example |
-| :--- | :--- | :--- |
-| **Element Selector** | Targets elements by tag name | `p { color: white; }` |
-| **Class Selector** | Targets elements using `class` attribute | `.head { color: darkblue; }` |
-| **ID Selector** | Targets unique elements using `id` attribute | `#bglime { background-color: lightgreen; }` |
-| **Child Combinator** | Targets immediate child elements | `section > ul > li` |
-| **Nth-Child Selector** | Targets elements based on index position | `ol li:nth-child(2)` |
-| **First-Child Selector** | Targets the first element among siblings | `ul li:first-child a` |
-
----
-
-## 🚀 How to Run
-
-1. Clone or download the project files.
-2. Ensure `index.html` and `style.css` are in the same folder.
-3. Open `index.html` in any web browser to view the rendered page.
+### Form Validation
+The form utilizes HTML attributes for basic browser-level validation:
+- Email input requires a valid email structure (`type="email"`).
+- Password input enforces a minimum length of 8 characters (`minlength="8"`).

@@ -3,38 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Laundry Services Hero Section</title>
   </head>
   <body>
-    <!-- header section and nav bar Start -->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="" class="logo">Logo</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#" class="user">Username</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Header and NavbarEnd -->
-
-    <main>
-      <div class="left-container">
-        <h1>Revitalize Your</h1>
-        <h1>Clothes with Expert</h1>
-        <h1><span>Laundry Services!</span></h1>
-        <pre>From premium dry cleaning to swift wash and fold, we 
-            deliver care and convenience. Schedule a pickup and 
-            rediscover the freshness of your clothes today!</pre>
-            <button>Book a service today!</button>
-        </div><div class="right-container">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcHYvcciaqZl6MSI8Ad0bkHkCYuempQXMSeTKTizvSKbbsUwlLh3Pas1B1&s=10" alt="">
+    <div class="container">
+      <div class="left">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkQKve1KsekV7SIb72UHdsTCwR-MkkwsAF3mMuGJatr7NWTR3nHVIP3JE&s=10"
+          alt=""
+        />
       </div>
-      
-    </main>
+      <div class="right">
+        <div class="heading">
+          <h1>Hello Again!</h1>
+          <p>Welcome back! we missed you!</p>
+        </div>
+        <div class="form">
+          <form action="">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="EmailId@site.com"
+              required
+            title="Please enter a valid email address"
+            />
+
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Password"
+              minlength="8"
+              title="Password must contain at least 8 characters, one uppercase letter, one lowercase letter, and one number."
+              required
+            />
+
+            <a href="#" id="forgot-password">Forgot Password</a>
+            <button type="submit">Login</button>
+
+            <p>Not a member? <a href="#">Register Now</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
