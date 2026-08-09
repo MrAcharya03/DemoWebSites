@@ -1,39 +1,22 @@
-# Responsive Split-Screen Login Page
+* **Project:** A split-screen web page featuring a side-by-side layout created with HTML and CSS Flexbox.
 
-A clean, modern, split-screen login page interface built using plain HTML5 and standard CSS3.
 
-## Features
+* **Left Side:** Displays a full-height image (`100vh`) using `object-fit: cover` to cleanly fit half of the screen without stretching.
 
-- Split-screen visual layout using CSS Flexbox.
-- Full viewport height cover image using dynamic viewport units (`100dvh`).
-- Native HTML5 form validation for email and password input fields.
-- Interactive styling for state changes (hover states on buttons and links).
-- Custom input styling with subtle shadow effects and clean typography.
 
-## File Structure
+* **Right Side:** Displays a welcome header and a clean login form with email and password inputs, a submit button, and navigation links.
 
-```text
-.
-├── index.html   # Main markup containing the form and image structure
-└── style.css    # Layout rules, typography, and visual styling
-```
 
-## Setup and Usage
+* **Form Styling:** Includes styled input boxes with soft shadow effects, full-width custom buttons, and interactive hover states for links and buttons.
 
-1. Clone or download the repository files to your local system.
-2. Open `index.html` directly in any web browser.
 
-No build tools, preprocessors, or external dependencies are required to run this project.
+* **`index.html`:** Serves as the main HTML file, dividing the layout into left and right containers using standard semantic HTML elements.
 
-## Code Overview
 
-### Layout Design
-The layout relies on a parent flex container (`.container`) split equally between two columns (`.left` and `.right`) using `flex-basis: 50%`:
+* **`index.css`:** Serves as the stylesheet, providing global box-resets, a light blue background, and the two-column Flexbox layout.
 
-- **Left Section (`.left`)**: Houses a side banner image set to `height: 100dvh` and `object-fit: cover` to ensure it fills the entire left column seamlessly without distorting the aspect ratio.
-- **Right Section (`.right`)**: Contains the form container with centered typography and clean spacing.
 
-### Form Validation
-The form utilizes HTML attributes for basic browser-level validation:
-- Email input requires a valid email structure (`type="email"`).
-- Password input enforces a minimum length of 8 characters (`minlength="8"`).
+* **How to Run:** Save `index.html` and `index.css` together in a single folder, then open `index.html` directly in any standard web browser.
+
+
+* **Technologies Used:** HTML5 for markup and CSS3 (Flexbox) for styling and alignment.
