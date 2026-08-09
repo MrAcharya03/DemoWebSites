@@ -1,22 +1,17 @@
-* **Project:** A split-screen web page featuring a side-by-side layout created with HTML and CSS Flexbox.
+# Here I made a Split-Screen Login Page
 
+A simple login page built with HTML and CSS Flexbox to practice center-alignment and layout structuring.
 
-* **Left Side:** Displays a full-height image (`100vh`) using `object-fit: cover` to cleanly fit half of the screen without stretching.
+## Flexbox Concepts Used
+- Created a main flex container set to 100vh.
+- Used `display: flex` on `.left` to center the cover image.
+- Used `display: flex` on `.right` with `flex-direction: column` to center the heading and form vertically and horizontally.
+- Used `align-self` inside the form flex items for specific element alignment (e.g., links and submission text).
 
+## Structure
+- `index.html` - Markup for layout structure and form elements.
+- `index.css` - Stylesheet for Flexbox layouts, reset, and form styling.
 
-* **Right Side:** Displays a welcome header and a clean login form with email and password inputs, a submit button, and navigation links.
+## How to Run 
 
-
-* **Form Styling:** Includes styled input boxes with soft shadow effects, full-width custom buttons, and interactive hover states for links and buttons.
-
-
-* **`index.html`:** Serves as the main HTML file, dividing the layout into left and right containers using standard semantic HTML elements.
-
-
-* **`index.css`:** Serves as the stylesheet, providing global box-resets, a light blue background, and the two-column Flexbox layout.
-
-
-* **How to Run:** Save `index.html` and `index.css` together in a single folder, then open `index.html` directly in any standard web browser.
-
-
-* **Technologies Used:** HTML5 for markup and CSS3 (Flexbox) for styling and alignment.
+- add two file `index.html` & `index.css` into a single folder then run `index.html` file in browser.
