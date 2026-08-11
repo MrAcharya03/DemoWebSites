@@ -1,0 +1,284 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Base navigation styling */
+header{
+  position: sticky;
+  top: 0;
+}
+nav {
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 3vw;
+}
+
+ul {
+  display: flex;
+  gap: 50px;
+}
+
+ul > li > a {
+  color: rgb(154, 146, 146);
+  font-size: 1.25rem;
+  transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+
+
+/* Hidden by default on desktop */
+nav > button {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  color: #333;
+}
+
+/* Div absolute positioning & display none by default */
+nav > button > div {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 10px 0;
+  z-index: 1001;
+}
+
+nav > button > div ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+nav > button > div ul li a {
+  display: block;
+  padding: 12px 20px;
+  color: #333;
+  font-size: 1rem;
+  text-align: left;
+}
+
+nav > button > div ul li a:hover {
+  background-color: #eaf5ff;
+  color: #3ba2f6;
+}
+
+/* Display list on click using :focus / :focus-within on button */
+nav > button:focus > div,
+nav > button:focus-within > div {
+  display: block;
+}
+
+
+.logo {
+  color: black;
+  font-size: 2rem;
+  float: inline-start;
+  position: sticky;
+  top: 0;
+  left: 5vw;
+  font-weight: 500;
+}
+.user {
+  overflow: auto;
+  color: #3ba2f6;
+  background-color: #eaf5ff;
+  float: inline-end;
+  font-size: 1.2rem;
+  padding: 12px 24px; /* Generous padding for pill shape */
+  border-radius: 16px;
+  position: sticky;
+  top: 0;
+  right: 5vw;
+}
+main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5vw;
+  height: 85vh;
+
+}
+
+
+
+.left-container{
+  width: 50%;
+    padding-left: 5%;
+    padding-top: 10%;
+   
+    
+  
+}
+.left-container> h1{
+    font-size: 3.5rem;
+    color: rgb(97, 91, 91);
+}
+.left-container>h1>span{
+    color:  rgb(69, 190, 238);
+}
+.left-container>p{
+    /* white-space: pre-line; */
+    font-size: 1.25rem;
+    word-spacing: 2px;
+    color: #9aa5b1;
+}
+.left-container>button{
+    font-size: 1.2rem;
+    background-color: rgb(69, 190, 238);
+    color: white;
+    border: 0;
+    padding: 3vh 5vw;
+    margin: 5vh auto;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.5 ease;
+
+}
+.left-container>button:hover{
+    background-color: rgb(40, 151, 157);
+}
+.right-container{
+    display: flex;
+    justify-content: center;
+    width: 48%;
+    
+
+}
+img{
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+}
+
+/* MEDIA QUERIES FOR TABLET & MOBILE */
+
+
+/* Tablet view */
+@media screen and (max-width: 768px) {
+
+  .logo{
+    font-size: 1.5rem;
+  }
+  .user{
+    font-size: 0.8rem;
+  }
+  ul > li > a{
+    font-size: 1rem;
+  }
+  nav{
+    padding: 15px 4vw;
+  }
+  ul{
+    gap: 15px;
+  }
+  main{
+    padding: 0 4vw;
+    width: 100%;
+  }
+  .left-container{
+    padding-top: 10%;
+    padding-left: 0;
+  }
+  .left-container h1{
+    font-size: 2.3rem;
+  }
+  .left-container span{
+    font-size: 2.3rem;
+  } 
+  .left-container p {
+      font-size: 1.35rem;
+      word-spacing: 0;
+  }
+  .right-container{
+    align-items: center;
+  }
+  img{
+    /* background-size: cover; */
+    width: 100%;
+  }
+}
+
+/* Mobile View (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  /* Hide standard navbar list on mobile */
+  nav{
+    gap: 0;
+  }
+  nav > ul {
+    display: none;
+    gap: 0;
+  }
+
+  /* Display hamburger button only on mobile */
+  nav > button {
+    display: block;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .user {
+    font-size: 1rem;
+  }
+
+  main {
+    flex-direction: column;
+    text-align: start;
+    padding: 0;
+    gap: 0;
+  }
+
+  nav {
+    padding: 15px 4vw;
+  }
+
+  .left-container {
+    padding: 0 4vw;
+    width: 100%;
+  }
+
+  .left-container h1 {
+    font-size: 2rem;
+  }
+
+  .left-container span {
+    font-size: 2rem;
+  }
+
+  .left-container p {
+    font-size: 1rem;
+    word-spacing: 0;
+  }
+
+  .right-container {
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .left-container > button {
+    padding: 3vh 8vw;
+  }
+}
+
