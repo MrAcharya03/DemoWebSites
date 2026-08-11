@@ -150,11 +150,13 @@ main{
     margin: 5vh auto;
     border-radius: 16px;
     cursor: pointer;
-    transition: all 0.5 ease;
+    
+    transition: all 0.5s ease-in-out;
 
 }
 .left-container>button:hover{
     background-color: rgb(40, 151, 157);
+    transform: scale(1.2) rotate(-10deg);
 }
 .right-container{
     display: flex;
