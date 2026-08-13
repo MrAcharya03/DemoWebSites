@@ -1,7 +1,7 @@
 -- `Project Structure` -- 
 index.html: Contains the layout structure including the sticky navbar, main text heading, preformatted paragraph description, action button, and hero image.
 
-style.css: Holds all visual styling, including alignment settings, typography, hover transitions, and sticky layout configurations.
+style.css: Holds all visual styling, including alignment settings, typography, hover transitions, sticky layout configurations and an atractive image animation.
 
 -- `Features` -- 
 Sticky Navigation Header: The menu bar stays fixed at the top of the browser view when scrolling through content.
@@ -23,6 +23,12 @@ A hamburger menu option is added to handle navigation on mobile screens.
 it helps when use mobile we can open menu to navigate another page.
 
 ## Again add new hover effect using transform property
+
+## New feature added
+
+`Animation` added for image
+it rotate and squeeze in a infinity loop.
+
 
 -- `How to Run` --
 Clone or download this project folder to your local machine.
